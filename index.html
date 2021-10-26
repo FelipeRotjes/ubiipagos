@@ -1,0 +1,857 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Favicon -->
+        <link rel="stylesheet" href="fonts/style.css">
+        <link rel="shortcut icon" href="images/ubii_logo1.png" type="image/x-icon">
+        <link rel="icon" href="images/ubii_logo1.png" type="image/x-icon">
+
+        <!-- Plugins CSS -->
+        <!-- <link rel="stylesheet" href="dist/css/plugins.css"> -->
+        <!-- fonts CSS -->
+
+        <link rel="stylesheet" href="fonts/linearicons/fonts.css">
+        <link rel="stylesheet" href="fonts/font-awesome/css/fontawesome-all.min.css">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <!-- Custom CSS File -->
+
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+            integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+            crossorigin="anonymous">
+        <!-- <link rel="stylesheet" href="css/ubiipagos-styles.css"> -->
+        <link rel="stylesheet" href="css/ubiipagos-styles_dev_2.css">
+
+        <title>Ubii Pagos</title>
+    </head>
+
+    <body data-spy="scroll" data-target="#navbar-scroll" data-offset="75">
+        <!--pre-loader-->
+        <!-- <div id="preloader"> <div id="preloader-inner"></div> </div> -->
+        <!--pre-loader-->
+
+        <!--navbar-->
+        <!-- <nav id="navbar-fixed-top" class="navbar navbar-expand-lg navbar-dark
+        fixed-top"> <a class="navbar-brand" href="index.html"> <img
+        src="images/ubiipagos-logo.svg" style="height: 35px; width: 110px;"> </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+        data-target="#navbarsExample03" aria-controls="navbarsExample03"
+        aria-expanded="false" aria-label="Toggle navigation"> <span
+        class="navbar-toggler-icon"></span> </button> <div class="collapse
+        navbar-collapse" id="navbarsExample03"> <ul class="navbar-nav mr-auto ml-auto">
+        <li class="nav-item"> <a class="nav-link" href="index.html">Inicio</a> </li> <li
+        class="nav-item active dropdown"> <a class="nav-link dropdown-toggle"
+        data-toggle="dropdown" href="#">Productos <span class="sr-only">(current)</span>
+        </a> <div class="dropdown-menu"> <a href="index.html"
+        class="dropdown-item">Puntos de ventas</a> </div> </li> <li class="nav-item
+        dropdown-fw"> <a class="nav-link dropdown-toggle" data-toggle="dropdown"
+        href="#">Requisitos</a> <div class="dropdown-menu dropdown-menu-fw"> <div
+        class="container"> <div class="row py-3 pb-0"> <div class="col-lg-3 ml-auto
+        mb-3"> <!-- <p> <strong>Pago con QR</strong> </p> <ul class="list-unstyled
+        list-links"> <li> <a href="#!">Requisitos y recaudos</a> </li> <li> <!-- <a
+        href="#!"> <span class="badge rounded bg-secondary text-white d-inline-block
+        ml-2">18</span> </a> </li> <li> <a href="#!">Consulta de status</a> </li> <li>
+        <a href="#!">Solicitar información</a> </li> <!-- <li> <a href="#!">Pagos en
+        Divisas</a> </li> </ul> </div> <!--/.col <div class="col-lg-4 mr-auto ml-auto
+        clearfix"> <img src="" alt="img" class="img-fluid"> </div> <!--/.col </div>
+        </div> </div> </li> <li class="nav-item dropdown"> <a class="nav-link
+        dropdown-toggle" href="#!" data-toggle="dropdown" aria-haspopup="true"
+        aria-expanded="false">Nosotros</a> <div class="dropdown-menu"> <a
+        class="dropdown-item" href="course-list.html">Sobre nosotros</a> <a
+        class="dropdown-item" href="course-grid.html">Aliados</a> </div> </li> <li
+        class="nav-item"> <a class="nav-link" href="contact.html">Contáctenos</a> </li>
+        </ul> </div> </nav> -->
+        <!--/.navbar-->
+
+        <nav
+            id="navbar-fixed-top"
+            class="navbar navbar-expand-lg navbar-dark fixed-top "
+            style="background-color: rgb(66, 66, 66)">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/ubiipagos-logo.svg" style="height: 35px; width: 110px;">
+            </a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarsExample03"
+                aria-controls="navbarsExample03"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExample03">
+                <ul class="navbar-nav mr-auto ml-auto">
+
+                    <!-- {{--}} <li class="nav-item {{ Request::segment(1) === 'inicio' ? 'active' :
+                    null }}"> <a class="nav-link" href="{{ url('inicio' )}}" > Inicio </a> </li>
+                    --}} -->
+                    <!-- Prductos -->
+                    <li class="nav-item dropdown">
+
+                        <a
+                            class="nav-link dropdown-toggle"
+                            href="#"
+                            id="navbarDropdown"
+                            role="button"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false">
+                            Productos
+
+                        </a>
+
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="puntosdeventas.html">
+                                Puntos de venta
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                Botón de pago
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                C2P
+                            </a>
+
+                        </div>
+                    </li>
+                    <!-- {{-- <li class="nav-item dropdown {{ Request::segment(1) === 'productos' ?
+                    'active' : null }}"> <a class="nav-link dropdown-toggle" href="#"
+                    id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false"> Productos </a> <div class="dropdown-menu
+                    dropdown-menu-right " aria-labelledby="navbarDropdown"> <a class="dropdown-item"
+                    href="#">Puntos de venta</a> </div> </li>--}} -->
+
+                    <!-- Requisitos -->
+                    <li class="nav-item dropdown">
+
+                        <a
+                            class="nav-link dropdown-toggle"
+                            href="#"
+                            id="navbarDropdown"
+                            role="button"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false">
+                            Quiero Ser Ubii
+
+                        </a>
+
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item " href="#">
+                                Requisitos y recaudos
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a
+                                id="popover1"
+                                tabindex="0"
+                                class="dropdown-item"
+                                href="#"
+                                data-placement="left"
+                                data-trigger="hover"
+                                rel="popover"
+                                data-original-title="Preafiliación"
+                                data-content="Permite registrarte a nuestro sistema">
+                                Nueva afiliación
+                            </a>
+                            <div class="dropdown-divider"></div>
+
+                            <a class="dropdown-item color-gris-ubii alert-text" href="status.html">
+                                Consulta de estatus
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">
+                                Solicitar informacion
+                            </a>
+
+                        </div>
+                    </li>
+
+                    <!-- Soy Ubii -->
+
+                    <li class="nav-item dropdown">
+
+                        <a
+                            class="nav-link dropdown-toggle"
+                            href="#"
+                            id="navbarDropdown"
+                            role="button"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false">
+
+                            Soy Ubii
+
+                        </a>
+
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+
+                            <a
+                                id="popover2"
+                                tabindex="0"
+                                class="dropdown-item"
+                                href="#"
+                                data-placement="left"
+                                data-trigger="hover"
+                                rel="popover"
+                                data-original-title="Terminal Adicional"
+                                data-content="Permite agregar un nuevo terminal">
+                                Terminal Adicional</a>
+                            <div class="dropdown-divider"></div>
+                            <a
+                                id="popover3"
+                                tabindex="0"
+                                class="dropdown-item"
+                                href="#"
+                                data-placement="left"
+                                data-trigger="hover"
+                                rel="popover"
+                                data-original-title="Traspaso"
+                                data-content="Permite el traspaso de terminales entre tus bancos y/o amigos">
+                                Traspaso de terminal</a>
+                            <div class="dropdown-divider"></div>
+
+                            <a
+                                id="popover4"
+                                tabindex="0"
+                                class="dropdown-item"
+                                data-placement="left"
+                                href="#"
+                                data-trigger="hover"
+                                rel="popover"
+                                data-original-title="Reinstalación/ Desinstalación"
+                                data-content="Permite solicitar la reinstalación y/o desinstalación de terminales">
+                                Reinstalación/ Desinstalación</a>
+                        </div>
+                    </li>
+
+                    <!-- Ubii App -->
+
+                    <li class="nav-item dropdown">
+
+                        <a
+                            class="nav-link dropdown-toggle"
+                            href="#"
+                            id="navbarDropdown"
+                            role="button"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false">
+
+                            Ubii App
+
+                        </a>
+
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+
+                            <a class="dropdown-item" href="#">
+                                ¿Qué es Ubii App?</a>
+
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">
+                                Persona Natural</a>
+                            <div class="dropdown-divider"></div>
+
+                            <a class="dropdown-item" href="#">
+                                Persona Jurídica</a>
+                        </div>
+                    </li>
+                    <!-- Nosotros -->
+                    <!-- <li class="nav-item dropdown">
+
+                        <a
+                            class="nav-link dropdown-toggle"
+                            href="#"
+                            id="navbarDropdown"
+                            role="button"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false">
+
+                            Nosotros
+
+                        </a>
+
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Sobre nosotros</a>
+                            <a class="dropdown-item" href="#">Aliados</a>
+                        </div>
+                    </li> -->
+
+                    <!-- Preguntas frecuentes -->
+                    <!-- {{--}}<li class="nav-item {{ Request::segment(1) === 'preguntas' ? 'active'
+                    : null }}"> <a class="nav-link" href="{{ URL::to('preguntas') }}" > Preguntas
+                    frecuentes </a> </li>--}} -->
+
+                    <li class="nav-item dropdown">
+
+                        <a
+                            class="nav-link dropdown-toggle"
+                            href="#"
+                            id="navbarDropdown"
+                            role="button"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false">
+
+                            Preguntas frecuentes
+
+                        </a>
+
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Puntos de Ventas</a>
+                            <a class="dropdown-item" href="#">Ubii App</a>
+                            <a class="dropdown-item" href="#">Botón de Pago</a>
+                            <a class="dropdown-item" href="#">C2P</a>
+                        </div>
+                    </li>
+                    <!-- Blog -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+
+                            Ubii Blog
+                        </a>
+                    </li>
+                    <!-- Contáctenos -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactos.html">
+
+                            Contáctenos
+                        </a>
+                    </li>
+                    <!-- Preafilización -->
+                    <!-- {{--}} <li class="nav-item {{ Request::segment(1) === 'preafiliacion' ?
+                    'active' : null }}"> <a class="nav-link pre color-gris-ubii alert-text" href="{{
+                    url('preafiliacion' )}}" > Pre afiliación </a> </li> --}} -->
+
+                </ul>
+            </div>
+        </nav>
+
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-4 col-sm-4 col-md-4 col-lg-4">
+                            <h1 class="text-carousel animate__animated animate__fadeInDown">
+                                Este es el punto de venta que tu negocio necesita</h1>
+                            <!-- <button type="button" class="btn btn-link animate__animated
+                            animate__fadeInLeft">Bancos afiliados</button> -->
+                            <a href="#" class="btn btn-white-outline ml-5" type="button">Bancos afiliados</a>
+                        </div>
+
+                    </div>
+
+                    <img src="../html/images/header1.1.jpg" class="d-block w-100" alt="...">
+
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-4 col-sm-6 col-md-4 col-lg-4">
+                            <h1 class="text-carousel animate__animated animate__fadeInDown">
+                                Este es el punto de venta que tu negocio necesita</h1>
+                            <!-- <button type="button" class="btn btn-link animate__animated
+                            animate__fadeInLeft">Bancos afiliados</button> -->
+                            <a href="#" class="btn btn-white-outline ml-5" type="button">Bancos afiliados</a>
+                        </div>
+
+                    </div>
+                    <img src="../html/images/header2.2.jpg" class="d-block w-100" alt="..."></div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-4 col-sm-4 col-md-4 col-lg-4">
+                            <h1 class="text-carousel animate__animated animate__fadeInDown">
+                                Este es el punto de venta que tu negocio necesita</h1>
+                            <!-- <button type="button" class="btn btn-link animate__animated
+                            animate__fadeInLeft">Bancos afiliados</button> -->
+                            <a href="#" class="btn btn-white-outline ml-5" type="button">Bancos afiliados</a>
+                        </div>
+
+                    </div>
+                    <img src="../html/images/header4.1.png" class="d-block w-100" alt="..."></div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="azul">
+                    <div class="row no-gutters justify-content-center">
+                        <div class="col-10 col-sm-10 col-md-9 col-lg-10">
+                            <h2 class="text-azul">Desarrollamos y comercializamos soluciones tecnológicas
+                                para tu comercio y la banca, con nuestros medios de pagos.
+                            </h2>
+
+                            <br>
+
+                            <h2 class="text-azul-1">Mejoramos tu día a día.</h2>
+
+                            <!-- <div class="col-10 col-sm-10 col-md-9 col-lg-10"> <h2
+                            class="text-azul-1">Mejoramos tu día a día.</h2> </div> -->
+
+                            <!-- <button type="button" class="btn btn-link-2 px-0">Sobre nosotros</button>
+                            -->
+                            <a href="#" class="btn btn-white-outline" type="button">Sobre nosotros</a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="container-fluid px-0"> <div class="row no-gutters section-gif">
+        <div class="col-12 col-sm-3 col-md-3 col-lg-3 "> </div> <div
+        class="section-photo col-12 col-sm-3 col-md-3 col-lg-3 text-center"> <button
+        type="button" class="btn btn-link-3">Ubii Pagos</button> </div> <div class="
+        section-photo col-3 col-sm-3 col-md-3 col-lg-3 text-center"> <button
+        type="button" class="btn btn-link-3">Ubii App</button> </div> <div class="col-12
+        col-sm-3 col-md-3 col-lg-3 "> </div> </div> </div> -->
+
+        <!-- <div class="parallax-window section-gif" data-parallax="scroll"
+        data-image-src="./images/section-gif.gif"> <div class="container-fluid px-0">
+        <div class="row no-gutters section-gif"> <div class="col-12 col-sm-3 col-md-3
+        col-lg-3 "></div> <div class="section-photo col-12 col-sm-3 col-md-3 col-lg-3
+        text-center"> <button type="button" class="btn btn-link-3">Ubii Pagos</button>
+        </div> <div class=" section-photo col-3 col-sm-3 col-md-3 col-lg-3 text-center">
+        <button type="button" class="btn btn-link-3">Ubii App</button> </div> <div
+        class="col-12 col-sm-3 col-md-3 col-lg-3 "></div> </div> </div> </div> -->
+
+        <div class="container-fluid">
+            <div class="row justify-content-md-center">
+                <div class="section-foto">
+
+                    <div class="row no-gutters justify-content-md-center">
+
+                        <div class="col-4 col-sm-4 col-md-4 col-lg-4"></div>
+
+                        <div class="col-8 col-sm-8 col-md-4 col-lg-4">
+                            <h2 class="text-foto">
+                                Conoce nuestros productos y servicios</h2>
+                            <!-- <button type="button" class="btn btn-link-4 px-0">Leer más</button> -->
+                            <a href="#" class="btn btn-white-outline-2" type="button">Leer más</a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="section-apoyo">
+
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 mt-5">
+                        <h2 class="text-apoyo">
+                            Con el apoyo de:
+                        </h2>
+                    </div>
+
+                    <!-- <div class="marquee"> -->
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="row marquee">
+
+                        <div class="col-6 col-sm-6 col-md col-lg mt-5">
+                            <img
+                                class="img-fluid w-fluid"
+                                src="../html/images/logo-bdv.png"
+                                alt="Responsive image">
+                        </div>
+
+                        <div class="col-6 col-sm-6 col-md col-lg mt-5">
+                            <img
+                                class="img-fluid w-fluid"
+                                src="../html/images/cl-bicentenario.png"
+                                alt="Responsive image">
+                        </div>
+
+                        <div class="col-6 col-sm-6 col-md col-lg mt-5">
+                            <img
+                                class="img-fluid w-fluid"
+                                src="../html/images/cl-bfc.png"
+                                alt="Responsive image">
+                        </div>
+
+                        <div class="col-6 col-sm-6 col-md col-lg mt-5">
+                            <img
+                                class="img-fluid w-fluid"
+                                src="../html/images/cl-cientoporciento.png"
+                                alt="Responsive image">
+                        </div>
+
+                        <!-- <div class="col-6 col-sm-6 col-md col-lg mt-5">
+                            <img
+                                class="img-fluid w-fluid"
+                                src="../html/images/cl-plaza.png"
+                                alt="Responsive image">
+                        </div>
+
+                        <div class="col-6 col-sm-6 col-md col-lg mt-5">
+                            <img
+                                class="img-fluid w-fluid"
+                                src="../html/images/cl-visa.png"
+                                alt="Responsive image">
+                        </div> -->
+
+                        <!-- Logos que no caben -->
+
+                        <!-- <div class="col-6 col-sm-6 col-md col-lg mt-5">
+                            <img
+                                class="img-fluid w-fluid"
+                                src="../html/images/cl-bancrecer.png"
+                                alt="Responsive image">
+                        </div>
+
+                        <div class="col-6 col-sm-6 col-md col-lg mt-5">
+                            <img
+                                class="img-fluid w-fluid"
+                                src="../html/images/cl-credicard.png"
+                                alt="Responsive image">
+                        </div>
+
+                        <div class="col-6 col-sm-6 col-md col-lg mt-5">
+                            <img
+                                class="img-fluid w-fluid"
+                                src="../html/images/cl-delsur.png"
+                                alt="Responsive image">
+                        </div>
+
+                        <div class="col-6 col-sm-6 col-md col-lg mt-5">
+                            <img
+                                class="img-fluid w-fluid"
+                                src="../html/images/cl-mibanco.png"
+                                alt="Responsive image">
+                        </div>
+
+                        <div class="col-6 col-sm-6 col-md col-lg mt-5">
+                            <img
+                                class="img-fluid w-fluid"
+                                src="../html/images/cl-plaza.png"
+                                alt="Responsive image">
+                        </div> -->
+
+                        <!-- <div class="col-6 col-sm-6 col-md col-lg mt-5">
+                            <img
+                                class="img-fluid w-fluid"
+                                src="../html/images/cl-visa.png"
+                                alt="Responsive image">
+                        </div>
+
+                        <div class="col-6 col-sm-6 col-md col-lg mt-5">
+                            <img
+                                class="img-fluid w-fluid"
+                                src="../html/images/cl-movistar.png"
+                                alt="Responsive image">
+                        </div>
+
+                        <div class="col-6 col-sm-6 col-md col-lg mt-5">
+                            <img
+                                class="img-fluid w-fluid"
+                                src="../html/images/cl-newtech.png"
+                                alt="Responsive image"> 
+                        </div> -->
+
+                    </div>
+
+                    <div class="row marquee">
+
+                        <div class="col-6 col-sm-6 col-md col-lg mt-5 mb-5">
+                            <img
+                                class="img-fluid w-fluid"
+                                src="../html/images/cl-bancrecer.png"
+                                alt="Responsive image">
+                        </div>
+
+                        <div class="col-6 col-sm-6 col-md col-lg mt-5 mb-5">
+                            <img
+                                class="img-fluid w-fluid"
+                                src="../html/images/cl-credicard.png"
+                                alt="Responsive image">
+                        </div>
+
+                        <div class="col-6 col-sm-6 col-md col-lg mt-5 mb-5">
+                            <img
+                                class="img-fluid w-fluid"
+                                src="../html/images/cl-delsur.png"
+                                alt="Responsive image">
+                        </div>
+
+                        <div class="col-6 col-sm-6 col-md col-lg mt-5 mb-5">
+                            <img
+                                class="img-fluid w-fluid"
+                                src="../html/images/cl-mibanco.png"
+                                alt="Responsive image">
+                        </div>
+
+                        <!-- <div class="col-6 col-sm-6 col-md col-lg mt-5">
+                            <img
+                                class="img-fluid w-fluid"
+                                src="../html/images/cl-movistar.png"
+                                alt="Responsive image">
+                        </div>
+
+                        <div class="col-6 col-sm-6 col-md col-lg mt-5">
+                            <img
+                                class="img-fluid w-fluid"
+                                src="../html/images/cl-newtech.png"
+                                alt="Responsive image"> 
+                        </div> -->
+
+                    </div>
+
+                    
+                </div>
+
+                </div>
+                <!-- </div> -->
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 px-0">
+                <div class="col-4 col-sm-4 col-md-4 col-lg-4">
+                    <h3 class="text-beneficio">Beneficios</h3>
+                </div>
+                <div class="carousel">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-12 col-sm-12 col-md-5 col-lg-5">
+                                        <h2 class="text-carousel-2">
+                                            Máxima seguridad</h2>
+                                        <h3 class="text-carousel-3">Cumpliendo con los estándares de seguridad más altos</h3>
+                                        <h4 class="text-carousel-4">(EMV y PCI)</h4>
+                                    </div>
+
+                                </div>
+                                <img src="../html/images/carousel-1.png" class="d-block w-100" alt="..."></div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-12 col-sm-12 col-md-5 col-lg-5">
+                                        <h2 class="text-carousel-2">
+                                            100% MÓVIL</h2>
+                                        <h3 class="text-carousel-3">Vía WiFi, LTE o 3G en tu smartphone o tablet</h3>
+                                    </div>
+
+                                </div>
+                                <img src="../html/images/carousel-2.png" class="d-block w-100" alt="..."></div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-12 col-sm-12 col-md-5 col-lg-5">
+                                        <h2 class="text-carousel-2">
+                                            Aumenta tus ingresos</h2>
+                                        <h3 class="text-carousel-3">Haz crecer tu negocio con pagos mediante tarjetas</h3>
+                                    </div>
+
+                                </div>
+                                <img src="../html/images/carousel-3.png" class="d-block w-100" alt="..."></div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-12 col-sm-12 col-md-5 col-lg-5">
+                                        <h2 class="text-carousel-2">
+                                            Céntrate en tus clientes</h2>
+                                        <h3 class="text-carousel-3">Ahorra tiempo para hacer lo que se te de la gana</h3>
+                                    </div>
+
+                                </div>
+                                <img src="../html/images/carousel-4.png" class="d-block w-100" alt="..."></div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-12 col-sm-12 col-md-5 col-lg-5">
+                                        <h2 class="text-carousel-2">
+                                            Revisa tus ingresos</h2>
+                                        <h3 class="text-carousel-3">Ofrecemos un sistema administrativo totalmente gratis</h3>
+                                    </div>
+
+                                </div>
+                                <img src="../html/images/carousel-5.png" class="d-block w-100" alt="..."></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--/.call to action-->
+    <!--footer-->
+
+    <footer class="footer footer-standard pt50 pb10">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb40">
+                    <h3 class="color-azul-ubii">ACERCA DE NOSOTROS</h3>
+                    <p class="text-justify">
+                        Somos una empresa formada desde 2013 por emprendedores del área financiera y de
+                        sistemas, decididos a innovar en desarrollos relacionados con pagos móviles que
+                        permitieran a los pequeños y grandes comercios poder recibir pagos con tarjetas.
+                    </p>
+                    <p class="text-center">
+                        <a href="#" class="btn btn-white-outline-footer btn-sm">LEER MAS</a>
+                    </p>
+
+                </div>
+                <div class="col-lg-3 col-md-6 mb40">
+                    <h3 class="color-azul-ubii">COMPAÑIA</h3>
+                    <ul class="fa-ul footer-list-item">
+                        <li>
+                            <span class="fa-li">
+                                <i class="fas fa-angle-right"></i>
+                            </span>
+                            <a href="#">Soluciones de pagos</a>
+                        </li>
+                        <li>
+                            <span class="fa-li">
+                                <i class="fas fa-angle-right"></i>
+                            </span>
+                            <a href="#">Requisitos y recaudos</a>
+                        </li>
+                        <li>
+                            <span class="fa-li">
+                                <i class="fas fa-angle-right"></i>
+                            </span>
+                            <a href="#">¿Quiénes somos?</a>
+                        </li>
+                        <li>
+                            <span class="fa-li">
+                                <i class="fas fa-angle-right"></i>
+                            </span>
+                            <a href="#">Contáctenos</a>
+                        </li>
+                        <li>
+                            <span class="fa-li">
+                                <i class="fas fa-angle-right"></i>
+                            </span>
+                            <a href="#">Preguntas Frecuentes</a>
+                        </li>
+                        <li>
+                            <span class="fa-li">
+                                <i class="fas fa-angle-right"></i>
+                            </span>
+                            <a href="#" target="_blank">
+                                Prevención y Control de LCFT
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="col-lg-5 col-md-6 mb40">
+                    <h3 class="color-azul-ubii">
+                        CONTÁCTANOS
+                        <h4>
+                            <i class="fa fa-map-marker"></i>
+                            Dirección: Edificio Centro Altamira. Nivel Mezzanina, Oficina M-13. Av. San Juan
+                            Bosco, Urbanización Altamira. Caracas, Venezuela 1060.
+                        </h4>
+                        <h4>
+                            <i class="fa fa-envelope"></i>Correo: Requerimientos@ubiipagos.com</h4><br/>
+                        <h4>
+                            <i class="fas fa-phone-alt"></i>
+                            Telefono: +58 212 279 99 99
+                        </h4>
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <footer class="footer-bottomAlt">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10">
+                    <div class="clearfix">
+
+                        <a
+                            href="https://www.facebook.com/ubiipagos/"
+                            target="_blank"
+                            class="social-icon-sm si-dark si-facebook si-dark-round">
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a
+                            href="https://www.instagram.com/ubiipagos/"
+                            target="_blank"
+                            class="social-icon-sm si-dark si-instagram si-dark-round">
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <span class="text-center" style="color: #ffff;">
+                            © Copyright Ubii Pagos RIF: J-40758698-0. Todos los derechos reservados.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- <a id="back-to-top" href="#" class="back-to-top hidden-xs-down"> <i
+    class="fas fa-angle-up"></i> </a> -->
+    <!--/.footer-->
+    <!--compile plugins-->
+    <!--Start of Tawk.to Script-->
+    <!-- <script type="text/javascript"> var Tawk_API = Tawk_API || {},
+    Tawk_LoadStart = new Date(); (function () { var s1 =
+    document.createElement("script"), s0 =
+    document.getElementsByTagName("script")[0]; s1.async = true; s1.src =
+    'https://embed.tawk.to/5acd3fd74b401e45400e84f2/default'; s1.charset = 'UTF-8';
+    s1.setAttribute('crossorigin', '*'); s0 .parentNode .insertBefore(s1, s0); })();
+    function alert_text() { var text = $('.alert-text');
+    text.removeClass('color-gris-ubii'); text.addClass('color-azul-ubii');
+    window.setTimeout(function () { text.removeClass('color-azul-ubii');
+    text.addClass('color-gris-ubii'); }, 500); } setInterval(alert_text, 1000);
+    </script> -->
+    <!--End of Tawk.to Script-->
+    <!-- <script
+    src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    -->
+    <script src="dist/js/plugins.js"></script>
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+    <script
+        src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+        crossorigin="anonymous"></script>
+    <script src="plugins/parallax.js-1.5.0/parallax.min.js"></script>
+    <script src="../html/script/parallax-ubii.js"></script>
+    <script>
+        $("#popover1").popover({trigger: "hover"});
+        $("#popover2").popover({trigger: "hover"});
+        $("#popover3").popover({trigger: "hover"});
+        $("#popover4").popover({trigger: "hover"});
+
+        /*window.addEventListener("load", function(event) {
+            $('#preloader').preloader('remove')
+        });*/
+    </script>
+
+</body>
+
+</html>

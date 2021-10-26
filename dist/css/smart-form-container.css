@@ -1,0 +1,194 @@
+
+/*
+Smart form customization
+*/
+.smart-container {
+    box-shadow: none;
+}
+
+.smart-wrap {
+    padding: 0px;
+}
+
+.smart-container {
+    margin: 0 auto;
+}
+
+.smart-forms {
+    font-family: "Poppins", sans-serif;
+}
+
+.smart-forms .form-body {
+    padding: 0px;
+    padding-bottom: 20px;
+}
+
+.smart-forms .form-footer {
+    overflow: hidden;
+    padding: 0px;
+    padding-top: 0px;
+    background: #fff;
+    background-image: none;
+}
+
+.smart-forms .refresh-captcha {
+    background-color: #5bc0de;
+    border-color: #00AAEB;
+}
+
+.smart-forms .button {
+    padding: 13px 25px 13px !important;
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+}
+
+.smart-forms .btn-primary {
+    background-color: #00AAEB;
+}
+
+.smart-forms .btn-primary:active {
+    background-color: #00AAEB;
+}
+
+.smart-forms .btn-primary:hover, .smart-forms .btn-primary:focus {
+    background-color: #00AAEB;
+}
+
+.smart-forms .input-hint {
+    font-family: "Open Sans", sans-serif;
+}
+
+.feedback-form {
+    margin: 0px;
+    box-shadow: none;
+    border: 0px;
+}
+
+.feedback-form .form-body {
+    padding: 0px;
+}
+
+.smart-forms .rating:hover .rating-star:hover, .smart-forms .rating:hover .rating-star:hover ~ .rating-star, .smart-forms .rating-input:checked ~ .rating-star {
+    color: #00AAEB;
+}
+
+.smart-forms .tagline span, .smart-forms .smart-link {
+    color: #00AAEB;
+}
+
+.smart-forms .gui-input:hover, .smart-forms .gui-textarea:hover, .smart-forms .select > select:hover, .smart-forms .select-multiple select:hover, .smart-forms .gui-input:hover ~ .input-hint, .smart-forms .file .gui-file:hover + .gui-input, .smart-forms .gui-textarea:hover ~ .input-hint {
+    border-color: #00AAEB;
+}
+
+.smart-forms .gui-input:focus, .smart-forms .gui-textarea:focus, .smart-forms .select > select:focus, .smart-forms .select-multiple select:focus {
+    border-color: #00AAEB;
+    -webkit-box-shadow: 0px 0px 3px #00AAEB inset;
+    -moz-box-shadow: 0px 0px 3px #00AAEB inset;
+    -o-box-shadow: 0px 0px 3px #00AAEB inset;
+    box-shadow: 0px 0px 3px #00AAEB inset;
+}
+
+.smart-forms .gui-input:focus ~ .field-icon i, .smart-forms .gui-textarea:focus ~ .field-icon i {
+    color: #00AAEB !important;
+}
+
+.smart-forms input:hover + .checkbox, .smart-forms input:hover + .radio {
+    border-color: #00AAEB !important;
+}
+
+.smart-forms input:checked + .checkbox, .smart-forms input:checked + .radio {
+    border: 3px solid #00AAEB !important;
+}
+
+.smart-forms input:focus + .checkbox:before {
+    border-color: #00AAEB !important;
+}
+
+.smart-forms input:checked + .checkbox:before, .smart-forms input:checked + .radio:before {
+    border-color: #00AAEB !important;
+}
+
+.smart-forms .radio:before {
+    background: #00AAEB !important;
+}
+
+.smart-forms label, .smart-forms input, .smart-forms button, .smart-forms select, .smart-forms textarea {
+    font-family: "Poppins", sans-serif !important;
+}
+
+.smart-forms .select-multiple select:focus, .smart-forms .gui-input:focus ~ .input-hint, .smart-forms .gui-textarea:focus ~ .input-hint, .smart-forms .file .gui-file:focus + .gui-input {
+    border-color: #00AAEB !important;
+}
+
+/********typed text cursor style*********/
+.typed-cursor {
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+    color: #00AAEB;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.typed-text {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #000;
+    line-height: 2rem;
+    text-transform: capitalize;
+    font-family: "Poppins", sans-serif;
+}
+
+.typed-text .typed {
+    color: #00AAEB;
+    display: inline-block;
+}
+
+.typed-text .typed:after {
+    content: '_';
+    font-size: 1.2rem;
+    -webkit-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+    position: relative;
+    margin-left: 6px;
+}
+
+.typed-cursor {
+    display: inline-block;
+    line-height: 2.5rem;
+}
